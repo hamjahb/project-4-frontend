@@ -31,7 +31,7 @@ export class ReqHis extends Component {
                     <li> date:{this.props.req.data} </li>
                     <li> specialNeeds:{this.props.req.specialNeeds} </li>
                     <li> requestStatus:{this.props.req.requestStatus} </li>
-                    <li> completed:{this.props.req.completed} </li>
+                    
                  
                   </ul>
                 </MDBCardText>

@@ -56,7 +56,10 @@ export class Patient extends Component {
     e.preventDefault()
     const self=this
     deleteRequest(this.props.patient).then((e)=>{
-        self.props.apiCallReq()
+        self.props.apiCallReq().then((temp)=>{
+          self.componentDidMount()
+        })
+
     })
   }
 

@@ -15,7 +15,7 @@ constructor(){
  apicall =()=>{
 
     myrequests(this.props.user).then(res=>{
-        console.log(res.data,"data")
+     
         const temp = res.data.requests.map((myrequests)=>{
             return { 
                 carDescription:myrequests.carDescription,

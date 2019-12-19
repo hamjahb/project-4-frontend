@@ -7,33 +7,33 @@ class Footer extends Component {
     return (
 
         <React.Fragment>
-<footer class="page-footer font-small cyan darken-3">
+<footer className="page-footer font-small cyan darken-3">
 
     {/* <!-- Footer Elements --> */}
-    <div class="container">
+    <div className="container">
   
       {/* <!-- Grid row--> */}
-      <div class="row">
+      <div className="row">
   
         {/* <!-- Grid column --> */}
-        <div class="col-md-12 py-5">
-          <div class="mb-5 flex-center">
+        <div className="col-md-12 py-5">
+          <div className="mb-5 flex-center">
   
             {/* <!-- Facebook --> */}
-            <a class="fb-ic">
-              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            <a className="fb-ic">
+              <i className="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
             </a>
             {/* <!-- Twitter --> */}
-            <a class="tw-ic">
-              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            <a className="tw-ic">
+              <i className="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
             </a>
             {/* <!-- Google +--> */}
-            <a class="gplus-ic">
-              <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            <a className="gplus-ic">
+              <i className="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
             </a>
             {/* <!--Linkedin --> */}
-            <a class="li-ic">
-              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            <a className="li-ic">
+              <i className="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
             </a>
            
           </div>
@@ -47,7 +47,7 @@ class Footer extends Component {
     {/* <!-- Footer Elements --> */}
   
     {/* <!-- Copyright --> */}
-    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <div className="footer-copyright text-center py-3">© 2019 Copyright:
       <a href="https://mdbootstrap.com/education/bootstrap/"> Meddico Trip</a>
     </div>
     {/* <!-- Copyright --> */}

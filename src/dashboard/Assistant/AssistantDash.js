@@ -16,7 +16,7 @@ export class AssistantDash extends Component {
   apiCallReq = () => {
     myrequestsAssistants(this.props.user)
       .then(res => {
-        console.log(res.data, "data");
+      
         const temp = res.data.requests.map(patient => {
           return {
             assistantId: patient.assistantId,
@@ -46,7 +46,8 @@ export class AssistantDash extends Component {
   };
 
   componentDidMount() {
-
+    // const { setOb } = this.context;
+    // setOb(this.props.user)
     this.apiCallReq();
   }
   

@@ -8,13 +8,15 @@ const assistant  = (
   <div>
     <Link className="nav-link d-inline" to="/assistant/history">History</Link>
     <Link className="nav-link d-inline" to="/assistant">My Requests </Link>
+    <Link className="nav-link d-inline" to="/assistant/prof">Profile </Link>
     </div>
 )
 
 const patient   = (
   <div>
-    <Link className="nav-link d-inline" to="/Patient/1/myrequests">History</Link>
-    <Link className="nav-link d-inline" to="/Patient/1/">My Requests </Link>
+    <Link className="nav-link d-inline" to="/Patient/myrequests">History</Link>
+    <Link className="nav-link d-inline" to="/Patient">My Requests </Link>
+    <Link className="nav-link d-inline" to="/Patient/prof">Profile </Link>
   </div>
 )
 
@@ -34,9 +36,9 @@ const unauthenticatedOptions = (
 )
 
 const alwaysOptions = (
-  <React.Fragment>
+<div>
     <Link  className="nav-link d-inline" to="/">Home</Link>
-  </React.Fragment>
+    </div>
 )
 
 const user = (e)=>{
@@ -65,7 +67,11 @@ const Header = ({ user,userRoll }) => (
     </Nav>
     
     <Nav>
-    <Nav.Link  ><Link className="nav-link d-inline" to="/team">Team</Link>  </Nav.Link>
+    <Nav.Link  >
+    <div>
+      <Link className="nav-link d-inline" to="/team">Team</Link> 
+      </div>
+       </Nav.Link>
       <a href="/">
       <img
         alt=""

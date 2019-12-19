@@ -53,7 +53,7 @@ export class UpdateRequest extends Component {
     event.preventDefault();
     const self = this
     updateRequest(this.state)
-      .then(res => {return self.props.history.push(`/Patient/${this.state.token}`)})
+      .then(res => {return self.props.history.push(`/Patient`)})
       .catch(e => console.log(e));
   };
   render() {

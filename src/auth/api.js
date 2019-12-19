@@ -42,7 +42,7 @@ console.log(req,"req")
 
 
 export const myrequests = req => {
-  console.log(req,"req")
+
     return axios({
       url: apiUrl + "/api/requests/patientrequests",
       method: 'GET',
@@ -55,7 +55,7 @@ export const myrequests = req => {
   }
 
   export const myrequestsAssistants= req => {
-    console.log(req,"req")
+ 
       return axios({
         url: apiUrl + "/api/assistantrequests",
         method: 'GET',
@@ -70,7 +70,7 @@ export const myrequests = req => {
 
 //get user info
     export const user= req => {
-      console.log(req,"req")
+   
         return axios({
           url: apiUrl +  `/api/user/${req.patientId}`,
           method: 'GET',
@@ -82,7 +82,7 @@ export const myrequests = req => {
       )
       }
   export const deleteRequest  = req => {
-    console.log(req,"hisham")
+ 
     return axios({
       url: apiUrl + `/api/requests/${req._id}`,
       method: 'DELETE',
@@ -95,7 +95,7 @@ export const myrequests = req => {
 
   
   export const updateRequest = req => {
-      console.log(req)
+   
     return axios({
       url: apiUrl +   `/api/requests/${req._id}`,
       method: 'patch',
@@ -123,7 +123,7 @@ export const myrequests = req => {
 
 
   export const updateRequestProcess = req => {
-    console.log(req)
+
   return axios({
     url: apiUrl +   `/api/requests/${req._id}`,
     method: 'patch',

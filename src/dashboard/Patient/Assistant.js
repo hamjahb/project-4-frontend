@@ -24,7 +24,7 @@ export class Assistant extends Component {
       this.props.setAssistantId(this.props.assistant._id);
       return (
         <Redirect
-          to={`/${this.props.user.role}/${this.props.user.token}/newrequest`}
+          to={`/${this.props.user.role}/newrequest`}
         />
       );
     }

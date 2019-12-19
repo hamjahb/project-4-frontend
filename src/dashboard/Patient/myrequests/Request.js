@@ -32,7 +32,7 @@ export class Request extends Component {
       return (
         <Redirect
           to={{
-            pathname: `/Patient/:${this.props.request.token}/myrequests/update/${this.props.request._id}`,
+            pathname: `/Patient/myrequests/update/${this.props.request._id}`,
             state: { id: this.props.request._id }
           }}
         />
@@ -47,7 +47,7 @@ export class Request extends Component {
   };
   
     render() {
-        console.log(this.context,"aaaa")
+       
         return (
 
     
