@@ -62,8 +62,8 @@ const Header = ({ user,userRoll }) => (
       <Nav.Link>{alwaysOptions}</Nav.Link>
       <Nav.Link>{ user ? authenticatedOptions : unauthenticatedOptions }</Nav.Link>
    
-      <Nav.Link>{ (userRoll.role === "Patient"  )? patient : false }</Nav.Link>
-      <Nav.Link>{ (userRoll.role === "Assistant" )? assistant : false }</Nav.Link>
+      <Nav.Link>{ (userRoll === "Patient"  )? patient : false }</Nav.Link>
+      <Nav.Link>{ (userRoll === "Assistant" )? assistant : false }</Nav.Link>
     </Nav>
     
     <Nav>

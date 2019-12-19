@@ -26,7 +26,8 @@ class App extends Component {
     this.state = {
       user: null,
       assistantId: null,
-      userObj: {}
+      userObj:{
+            role:""}
     };
   }
   static contextType = ThemeContext;
@@ -41,14 +42,24 @@ class App extends Component {
   setAssistantId = assistantId => this.setState({ assistantId });
   clearUser = () => this.setState({ user: null });
 
+  temp =()=>{
+    if(this.state.userObj)
+    return <Header user={this.state.user} userRoll={this.state.userObj.role} />
+    else 
+      return <Header user={this.state.user} userRoll="dd" />
+    
+
+  }
   render() {
     const { user, userObj } = this.state;
     // const { setOb } = this.context;
     console.log(this.context)
   // setOb(this.state.user, this.state.userObj, this.state.assistantId);
+
+  
     return (
       <React.Fragment>
-        <Header user={user} userRoll={userObj} />
+      {this.temp()}
 
         <main className="push-footer">
           <Route

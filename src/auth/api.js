@@ -44,7 +44,7 @@ console.log(req,"req")
 export const myrequests = req => {
 
     return axios({
-      url: apiUrl + "/api/requests/patientrequests",
+      url: apiUrl + "/api/patientrequests",
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${req.token}` // FOR EXPRESS
